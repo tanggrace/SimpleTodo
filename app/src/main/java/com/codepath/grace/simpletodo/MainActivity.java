@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode == RESULT_OK && requestCode == EDIT_TEXT_CODE) {
             // Retrieve the updated text value
             String itemText = data.getStringExtra(KEY_ITEM_TEXT);
-            Log.d("MainActivity", itemText);
             // extract the original position of the edited item from the position key
             int position = data.getExtras().getInt(KEY_ITEM_POSITION);
 
